@@ -2,10 +2,12 @@
 
 * {
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 html {
+  font-family: 'Poppins', sans-serif;
   line-height: 1.6;
   height: 100%;
   scroll-behavior: smooth;
@@ -14,8 +16,6 @@ html {
 body {
   font-size: rem(16px);
   color: white;
-  margin: 0;
-  margin: auto;
   background-color: #2f3543;
 }
 
@@ -26,10 +26,6 @@ h4,
 h5,
 h6 {
   line-height: 1;
-}
-
-p {
-  margin: 0;
 }
 
 a {
@@ -44,4 +40,3 @@ ul {
 a:hover {
   text-decoration: none;
 }
-

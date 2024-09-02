@@ -1,0 +1,25 @@
+:root {
+  --layout-padding: 20px;
+  --max-width: 2360px;
+  --padded-max-width: calc(var(--max-width) + (var(--layout-padding) * 2));
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns:
+    minmax(var(--layout-padding), 1fr)
+    minmax(auto, var(--max-width))
+    minmax(var(--layout-padding), 1fr);
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+
+  > * {
+    &:not(.full) {
+      grid-column: 2;
+    }
+
+    &.full {
+      grid-column: 1 / -1;
+    }
+  }
+}
